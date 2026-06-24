@@ -32,6 +32,22 @@
 
     { "id": "music",   "version": "1.0.0", "size": 2400752, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-all.bin" },
     { "id": "lyrics",  "version": "1.0.0", "size": 2400752, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-all.bin" },
-    { "id": "reader",  "version": "1.0.0", "size": 2400752, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-all.bin" }
+    { "id": "reader",  "version": "1.0.0", "size": 2400752, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-all.bin" },
+
+    { "id": "charm",    "version": "1.0.0", "size": 2400752, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-all.bin" },
+    { "id": "clock",    "version": "1.0.0", "size": 2400752, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-all.bin" },
+    { "id": "badge",    "version": "1.0.0", "size": 2400752, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-all.bin" },
+    { "id": "audio",    "version": "1.0.0", "size": 2400752, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-all.bin" },
+    { "id": "fidget",   "version": "1.0.0", "size": 2400752, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-all.bin" },
+    { "id": "finder",   "version": "1.0.0", "size": 2400752, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-all.bin" },
+    { "id": "buddy",    "version": "1.0.0", "size": 2400752, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-all.bin" },
+    { "id": "streak",   "version": "1.0.0", "size": 2400752, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-all.bin" },
+    { "id": "pomo",     "version": "1.0.0", "size": 2400752, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-all.bin" },
+    { "id": "capsule",  "version": "1.0.0", "size": 2400752, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-all.bin" },
+    { "id": "camera",   "version": "1.0.0", "size": 2400752, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-all.bin" },
+    { "id": "knob",     "version": "1.0.0", "size": 2400752, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-all.bin" },
+    { "id": "album",    "version": "1.0.0", "size": 2400752, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-all.bin" },
+    { "id": "assistant","version": "1.0.0", "size": 2400752, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-all.bin" },
+    { "id": "rotate",   "version": "1.0.0", "size": 2400752, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-all.bin" }
   ]
 }
