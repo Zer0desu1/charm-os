@@ -1,0 +1,13 @@
+name = "vecta-build-proxy"
+main = "worker.js"
+compatibility_date = "2024-11-01"
+
+# Public, non-secret config. The GitHub repo that holds the firmware + workflow.
+[vars]
+GH_OWNER = "Zer0desu1"
+GH_REPO = "charm-os"
+GH_WORKFLOW = "build.yml"
+
+# Secrets are NOT put here. Set them once after first deploy:
+#   wrangler secret put GH_TOKEN     # fine-grained PAT (Actions R+W, Contents R)
+#   wrangler secret put APP_KEY      # optional: gate the endpoint (app sends X-App-Key)
