@@ -1,0 +1,37 @@
+{
+  "_comment": [
+    "Charm module store manifest. Host this file somewhere public (GitHub raw,",
+    "S3, any static host) and set MODULE_STORE_URL in AmoledSenderExpo/lib/device.ts",
+    "to its URL. The app's Store tab reads it: each entry maps a module id to a",
+    "prebuilt firmware .bin that INCLUDES that module. Tapping 'Yükle' downloads",
+    "the .bin and OTA-flashes it over Wi-Fi.",
+    "",
+    "Because a slim .bin is a BUNDLE of modules (not a single one), several module",
+    "ids can point at the SAME 'bin' URL - installing any of them flashes that",
+    "bundle. Build one .bin per bundle you want to offer (see store/README.md),",
+    "then list its module ids here. 'version'/'size' are shown in the UI.",
+    "Module ids must match registerModule() ids in Vecta.ino."
+  ],
+  "version": 1,
+  "modules": [
+    { "id": "notify",  "version": "1.0.0", "size": 2028752, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-social.bin" },
+    { "id": "lovebox", "version": "1.0.0", "size": 2028752, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-social.bin" },
+    { "id": "collar",  "version": "1.0.0", "size": 2028752, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-social.bin" },
+    { "id": "draw",    "version": "1.0.0", "size": 2028752, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-social.bin" },
+
+    { "id": "game",    "version": "1.0.0", "size": 2042992, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-fun.bin" },
+    { "id": "rps",     "version": "1.0.0", "size": 2042992, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-fun.bin" },
+    { "id": "reflex",  "version": "1.0.0", "size": 2042992, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-fun.bin" },
+    { "id": "ttt",     "version": "1.0.0", "size": 2042992, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-fun.bin" },
+    { "id": "tama",    "version": "1.0.0", "size": 2042992, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-fun.bin" },
+
+    { "id": "maps",    "version": "1.0.0", "size": 2029504, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-nav.bin" },
+    { "id": "weather", "version": "1.0.0", "size": 2029504, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-nav.bin" },
+    { "id": "nav",     "version": "1.0.0", "size": 2029504, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-nav.bin" },
+    { "id": "compass", "version": "1.0.0", "size": 2029504, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-nav.bin" },
+
+    { "id": "music",   "version": "1.0.0", "size": 2400432, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-all.bin" },
+    { "id": "lyrics",  "version": "1.0.0", "size": 2400432, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-all.bin" },
+    { "id": "reader",  "version": "1.0.0", "size": 2400432, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-all.bin" }
+  ]
+}
