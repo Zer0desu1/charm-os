@@ -1,0 +1,65 @@
+name: build-firmware
+
+# Builds a custom Vecta firmware image with EXACTLY the requested module set and
+# publishes it as an asset on the "custom" release. The phone app triggers this
+# (workflow_dispatch) with a comma-separated module list, then downloads
+# charm-<sorted-mods>.bin and OTA-flashes it.
+
+on:
+  workflow_dispatch:
+    inputs:
+      mods:
+        description: "comma-separated module ids (empty = base, no feature modules)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write          # needed to create/update the release + upload assets
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Cache PlatformIO
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.platformio
+            ~/.cache/pip
+          key: pio-${{ runner.os }}-${{ hashFiles('firmware/platformio.ini') }}
+
+      - name: Install PlatformIO
+        run: pip install -U platformio
+
+      - name: Build firmware
+        id: b
+        run: |
+          MODS="${{ github.event.inputs.mods }}"
+          FLAGS="-DCHARM_BASE=1"
+          for m in $(echo "$MODS" | tr ',' ' '); do
+            U=$(echo "$m" | tr '[:lower:]' '[:upper:]' | tr -cd 'A-Z0-9_')
+            [ -n "$U" ] && FLAGS="$FLAGS -DMOD_$U=1"
+          done
+          # deterministic asset name = base + sorted module ids (matches the app)
+          KEY=$(echo "$MODS" | tr ',' '\n' | sed '/^$/d' | tr '[:upper:]' '[:lower:]' | sort -u | tr '\n' '-' | sed 's/-$//')
+          NAME="charm-${KEY:-base}.bin"
+          echo "name=$NAME" >> "$GITHUB_OUTPUT"
+          echo "Building $NAME with flags: $FLAGS"
+          # the committed platformio.ini pins build_dir to a Windows path; drop it on CI
+          sed -i '/^build_dir/d' firmware/platformio.ini
+          PLATFORMIO_BUILD_FLAGS="$FLAGS" pio run -d firmware -e esp32-s3-devkitc-1
+          cp firmware/.pio/build/esp32-s3-devkitc-1/firmware.bin "$NAME"
+          ls -la "$NAME"
+
+      - name: Publish to "custom" release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: custom
+          name: Custom builds
+          files: ${{ steps.b.outputs.name }}

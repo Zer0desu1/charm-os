@@ -1,0 +1,7 @@
+# PlatformIO build output (never commit)
+firmware/.pio/
+**/.pio/
+# build server cache
+firmware/tools/.build_cache/
+# local bundle bins (hosted as release assets, not in git)
+*.bin
