@@ -14,24 +14,24 @@
   ],
   "version": 1,
   "modules": [
-    { "id": "notify",  "version": "1.0.0", "size": 2028752, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-social.bin" },
-    { "id": "lovebox", "version": "1.0.0", "size": 2028752, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-social.bin" },
-    { "id": "collar",  "version": "1.0.0", "size": 2028752, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-social.bin" },
-    { "id": "draw",    "version": "1.0.0", "size": 2028752, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-social.bin" },
+    { "id": "notify",  "version": "1.0.0", "size": 2029136, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-social.bin" },
+    { "id": "lovebox", "version": "1.0.0", "size": 2029136, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-social.bin" },
+    { "id": "collar",  "version": "1.0.0", "size": 2029136, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-social.bin" },
+    { "id": "draw",    "version": "1.0.0", "size": 2029136, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-social.bin" },
 
-    { "id": "game",    "version": "1.0.0", "size": 2042992, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-fun.bin" },
-    { "id": "rps",     "version": "1.0.0", "size": 2042992, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-fun.bin" },
-    { "id": "reflex",  "version": "1.0.0", "size": 2042992, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-fun.bin" },
-    { "id": "ttt",     "version": "1.0.0", "size": 2042992, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-fun.bin" },
-    { "id": "tama",    "version": "1.0.0", "size": 2042992, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-fun.bin" },
+    { "id": "game",    "version": "1.0.0", "size": 2043296, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-fun.bin" },
+    { "id": "rps",     "version": "1.0.0", "size": 2043296, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-fun.bin" },
+    { "id": "reflex",  "version": "1.0.0", "size": 2043296, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-fun.bin" },
+    { "id": "ttt",     "version": "1.0.0", "size": 2043296, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-fun.bin" },
+    { "id": "tama",    "version": "1.0.0", "size": 2043296, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-fun.bin" },
 
-    { "id": "maps",    "version": "1.0.0", "size": 2029504, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-nav.bin" },
-    { "id": "weather", "version": "1.0.0", "size": 2029504, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-nav.bin" },
-    { "id": "nav",     "version": "1.0.0", "size": 2029504, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-nav.bin" },
-    { "id": "compass", "version": "1.0.0", "size": 2029504, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-nav.bin" },
+    { "id": "maps",    "version": "1.0.0", "size": 2029888, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-nav.bin" },
+    { "id": "weather", "version": "1.0.0", "size": 2029888, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-nav.bin" },
+    { "id": "nav",     "version": "1.0.0", "size": 2029888, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-nav.bin" },
+    { "id": "compass", "version": "1.0.0", "size": 2029888, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-nav.bin" },
 
-    { "id": "music",   "version": "1.0.0", "size": 2400432, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-all.bin" },
-    { "id": "lyrics",  "version": "1.0.0", "size": 2400432, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-all.bin" },
-    { "id": "reader",  "version": "1.0.0", "size": 2400432, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-all.bin" }
+    { "id": "music",   "version": "1.0.0", "size": 2400752, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-all.bin" },
+    { "id": "lyrics",  "version": "1.0.0", "size": 2400752, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-all.bin" },
+    { "id": "reader",  "version": "1.0.0", "size": 2400752, "bin": "https://github.com/Zer0desu1/charm-os/releases/download/v1/charm-all.bin" }
   ]
 }
